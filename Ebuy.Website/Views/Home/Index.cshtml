@@ -9,14 +9,13 @@
     </section>
 }
 <h1>Welcome to WebGL!</h1>
-<div id="container" style="width:95%; height:80%; position:relative;"></div>
-<div id="canvas3d" style="width:95%; height:6%; text-align:center; position:relative;"></div>
-
+<div id="container">
+    <div id="canvas3d"></div>
+</div>
 <script src="~/Scripts/three.min.js"></script>
 <script src="~/Scripts/jquery-1.7.1.min.js"></script>
 <style type="text/css">
-
-    div#canvas-frame {
+    div#canvas3d {
         border: none;
         cursor: move;
         width: 1400px;
@@ -26,12 +25,7 @@
 </style>
 
 <script>
-    $(document).ready(function(){
-        initThree();
-        initCamera();
-        initScene();
-        initLight();
-        initObject();
+    $(document).ready(function () {
         threeStart();
     });
     function initThree() {
