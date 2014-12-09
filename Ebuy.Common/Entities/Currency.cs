@@ -37,8 +37,8 @@ namespace Ebuy
     {
         public static IDictionary<char, string> CurrencyCodesBySymbol = new Dictionary<char, string>() {
                     { '€', "EUR" },
-                    { '£', "GBP" },
-                    { '¥', "JPY" },
+                    { '?', "GBP" },
+                    { '?', "JPY" },
                     { '$', "USD" },
                 };
 
